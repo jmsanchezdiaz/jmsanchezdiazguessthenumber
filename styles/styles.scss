@@ -1,0 +1,113 @@
+$FirstColor : #227093;
+$SecondColor : #218c74;
+$ThirdColor : #f7f1e3;
+$ForthColor : #525252;
+$MainFont : 'Noto Sans JP',
+sans-serif;
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font: {
+        family: $MainFont;
+        size: 20px;
+    }
+
+    ;
+    background-color: $ForthColor;
+    color: $ThirdColor;
+    margin: auto 20px;
+}
+
+
+
+.title {
+    text: {
+        align: center;
+        decoration: underline;
+    }
+
+    ;
+}
+
+.guessContainer {
+    #guessInput {
+        border: 5px solid $SecondColor;
+        border-radius: 5px;
+    }
+
+    #guessInput:focus {
+        outline: none;
+    }
+}
+
+.btn {
+    border: 5px solid #fff;
+    padding: 5px 10px;
+    border-radius: 15px;
+    background-color: $SecondColor;
+    color: #fff;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: $SecondColor;
+}
+
+;
+
+.gameContainer {
+    padding: 20px;
+    background-color: $FirstColor;
+    border: 8px solid $SecondColor;
+
+    .results {
+        margin: 20px 0;
+        background-color: $SecondColor;
+        border-radius: 13px;
+        box-shadow: 0px 0px 10px 5px rgba(0, 143, 76, 0.315);
+
+        .btn {
+            border: 5px solid #fff;
+            padding: 5px 10px;
+            border-radius: 15px;
+            background-color: $SecondColor;
+            color: #fff;
+            cursor: pointer;
+            transition: all .5s;
+        }
+
+        ;
+
+        .btn:hover {
+            background-color: #fff;
+            color: $SecondColor;
+        }
+
+        li {
+            padding: 10px;
+        }
+    }
+}
+
+.finalMessage {
+    text-align: center;
+    padding: 10px;
+
+    h3 {
+        text-decoration: underline;
+    }
+}
+
+.hidden {
+    display: none;
+}

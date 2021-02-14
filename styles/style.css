@@ -1,3 +1,85 @@
+* {
+  box-sizing: border-box;
+}
 
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 20px;
+  background-color: #525252;
+  color: #f7f1e3;
+  margin: auto 20px;
+}
+
+.title {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.guessContainer #guessInput {
+  border: 5px solid #218c74;
+  border-radius: 5px;
+}
+.guessContainer #guessInput:focus {
+  outline: none;
+}
+
+.btn {
+  border: 5px solid #fff;
+  padding: 5px 10px;
+  border-radius: 15px;
+  background-color: #218c74;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #218c74;
+}
+
+.gameContainer {
+  padding: 20px;
+  background-color: #227093;
+  border: 8px solid #218c74;
+}
+.gameContainer .results {
+  margin: 20px 0;
+  background-color: #218c74;
+  border-radius: 13px;
+  box-shadow: 0px 0px 10px 5px rgba(0, 143, 76, 0.315);
+}
+.gameContainer .results .btn {
+  border: 5px solid #fff;
+  padding: 5px 10px;
+  border-radius: 15px;
+  background-color: #218c74;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.gameContainer .results .btn:hover {
+  background-color: #fff;
+  color: #218c74;
+}
+.gameContainer .results li {
+  padding: 10px;
+}
+
+.finalMessage {
+  text-align: center;
+  padding: 10px;
+}
+.finalMessage h3 {
+  text-decoration: underline;
+}
+
+.hidden {
+  display: none;
+}
 
 /*# sourceMappingURL=style.css.map */
