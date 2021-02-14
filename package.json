@@ -1,0 +1,24 @@
+{
+  "name": "guessthenumber",
+  "version": "1.0.0",
+  "description": "A guess the number game",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass" : "sass",
+    "sass:watch": "sass --watch styles/styles.scss styles/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmsanchezdiaz/GuessTheNumber.git"
+  },
+  "author": "Juanma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmsanchezdiaz/GuessTheNumber/issues"
+  },
+  "homepage": "https://github.com/jmsanchezdiaz/GuessTheNumber#readme",
+  "dependencies": {
+    "sass": "^1.32.7"
+  }
+}
