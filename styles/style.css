@@ -87,4 +87,17 @@ body {
   display: none;
 }
 
+.mode {
+  padding: 10px 50px;
+}
+
+.active {
+  background-color: #7b07ff;
+}
+
+.difficulties {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 /*# sourceMappingURL=style.css.map */

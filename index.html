@@ -11,27 +11,30 @@
 </head>
 <body>
     <h1 class="title">Welcome to GUESS THE NUMBER</h1>
-    <h4 class="subtitle">This game is about you typing a random number between (0-100 | 100-500 | 500-1000) to figure out what is the hidden number. <br>
-    Easy? You only have a few tries
+    <h4 class="subtitle">This game is about you typing a random number between (0-50 | 50-150 | 150-550) to figure out what is the hidden number. <br>
+    Easy? You only have a few tries;
     </h4>
     
    <div class="gameContainer">
-        <h2 class="tries">Tries Remaining : 5</h2>
+        <div class="difficulties">
+            <button class="btn mode easy">0-50</button>
+            <button class="btn mode medium">50-150</button>
+            <button class="btn mode hard">150-550</button>
+        </div>
+
+        <h2 class="tries">Tries Remaining : Waiting to you choose the Mode</h2>
        
         <div class="guessContainer">
             <form action="" id="form">
-                <label for="guessInput">Type your Number(0-100)</label>
+                <label for="guessInput">Type your Number</label>
                 <input type="number" name="guessInput" id="guessInput">
-                <button class="btn" name="btn" type="submit">Try</button>
+                <button class="btn try" name="btn" type="submit">Try</button>
             </form>
         </div>
        
         <div class="results">
-            <ul class="hintsGreater">
-                <h4 class="titleList">Greater Than</h4>
-            </ul>
-            <ul class="hintsSmaller">
-                <h4 class="titleList">Smaller Than</h4>
+            <ul class="hints">
+                <h4 class="titleList">Hints</h4>
             </ul>
             <div class="finalMessage hidden">
                 <h3 class="finalText"></h3>
