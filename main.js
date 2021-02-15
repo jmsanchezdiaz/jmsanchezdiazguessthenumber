@@ -12,25 +12,35 @@ const tryButton =  document.querySelector('.try');
 let triesLeft, mode;
 let randomizedNumber;
 
+const commonFunctionsInModes = (mode)=>{
+    form.guessInput.removeAttribute('disabled');
+    tryButton.removeAttribute('disabled');
+    randomizedNumber = randomNumber(mode);
+    actualTries();
+}
+
 easyMode.addEventListener('click', () => {
     mode = 50;
     triesLeft = 5;
     easyMode.classList.add('active');
     mediumMode.classList.add('hidden');
     hardMode.classList.add('hidden');
-    actualTries();
-    randomizedNumber = randomNumber(mode);
-    easyMode.click() = '';
+
+    commonFunctionsInModes(mode);
+
+    easyMode.setAttribute('disabled',"true");
 })
 mediumMode.addEventListener('click', () => {
+    
     mode = 150;
     triesLeft = 7;
     mediumMode.classList.add('active');
     easyMode.classList.add('hidden');
     hardMode.classList.add('hidden');
-    actualTries();
-    randomizedNumber = randomNumber(mode);
-    mediumMode.click() = '';
+    
+    commonFunctionsInModes(mode);
+    
+    mediumMode.setAttribute('disabled',"true");
 })
 hardMode.addEventListener('click', () => {
     mode = 550;
@@ -38,16 +48,18 @@ hardMode.addEventListener('click', () => {
     hardMode.classList.add('active');
     easyMode.classList.add('hidden');
     mediumMode.classList.add('hidden');
-    actualTries();
-    randomizedNumber = randomNumber(mode);
-    hardMode.click() = '';
+
+    commonFunctionsInModes(mode);
+
+    hardMode.setAttribute('disabled',true);
+    
 })
 
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     const playerGuess = parseInt(e.target.guessInput.value);
-    if (typeof playerGuess !== Number || playerGuess === undefined || playerGuess === NaN) errorText();
+    if (playerGuess < 0 || !playerGuess) errorText();
     else isRightNumber(playerGuess);
 });
 
