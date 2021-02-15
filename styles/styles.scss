@@ -63,7 +63,6 @@ body {
     color: $SecondColor;
 }
 
-;
 
 .gameContainer {
     padding: 20px;
@@ -106,6 +105,11 @@ body {
     h3 {
         text-decoration: underline;
     }
+}
+
+.titleList{
+    margin: 0;
+    text-decoration: underline;
 }
 
 .hidden {

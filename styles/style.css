@@ -78,6 +78,11 @@ body {
   text-decoration: underline;
 }
 
+.titleList {
+  margin: 0;
+  text-decoration: underline;
+}
+
 .hidden {
   display: none;
 }

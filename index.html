@@ -11,8 +11,8 @@
 </head>
 <body>
     <h1 class="title">Welcome to GUESS THE NUMBER</h1>
-    <h4 class="subtitle">This game is about you typing a random number between 0-100 to figure out what is the hidden number. <br>
-    Easy? You only have fives tries
+    <h4 class="subtitle">This game is about you typing a random number between (0-100 | 100-500 | 500-1000) to figure out what is the hidden number. <br>
+    Easy? You only have a few tries
     </h4>
     
    <div class="gameContainer">
@@ -27,20 +27,20 @@
         </div>
        
         <div class="results">
-            <ul class="hints">
-                <li class="number">Mayor que 6</li>
-                <li class="number">Menor que 10</li>
-                <li class="number">Mayor que 6</li>
-                <li class="number">Menor que 10</li>
-                <li class="number">Mayor que 6</li>
+            <ul class="hintsGreater">
+                <h4 class="titleList">Greater Than</h4>
+            </ul>
+            <ul class="hintsSmaller">
+                <h4 class="titleList">Smaller Than</h4>
             </ul>
             <div class="finalMessage hidden">
-                <h3>Congratulation</h3>
-                <button class="btn">Play Again</button>
+                <h3 class="finalText"></h3>
+                <button class="btn playAgain">Play Again</button>
             </div>
         </div>
 
    </div>
 
+   <script src="main.js"></script>
 </body>
 </html>
